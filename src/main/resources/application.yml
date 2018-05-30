@@ -4,6 +4,7 @@ zuul:
   routes:
     hello-server:
       path: /server/**
+      #we can use url or serviceId. if there is eureka-service at back-end use url else serviceId=HELLO-SERVER
       url: http://localhost:8061
     hello-client:
       path: /client/**
